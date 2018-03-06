@@ -1,5 +1,5 @@
 var rover = {
-    direction : "N",
+    direction : 'N',
     x: 0,
     y: 0,
     travelLog: [],
@@ -19,9 +19,10 @@ function TurnLeft(rover){
 			rover.direction='E';
 			return ('Rover is now facing east');
 			break;
-		default :
+		case 'E' :
 			rover.direction='N';
 			return ('Rover is now facing north');
+			break;
 	}
 }
 
@@ -40,21 +41,22 @@ function TurnRight(rover){
 			rover.direction='W';
 			return ('Rover is now facing west');
 			break;
-		default :
+		case 'W' :
 			rover.direction='N';
 			return ('Rover is now facing north');
+			break;
 	}
 }
 
 
 function moveFordward(rover){
-	if(rover.direction='N'){
+	if(rover.direction==='N'){
 		rover.y= rover.y - 1;
 	}
-	else if(rover.direction='E'){
+	else if(rover.direction==='E'){
 		rover.x= rover.x + 1;
 	}
-	else if(rover.direction='S'){
+	else if(rover.direction==='S'){
 		rover.y= rover.y + 1;
 	}
 	else {
