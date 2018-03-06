@@ -200,15 +200,15 @@ function moveFordward(rover2){
 
 function movementsRover2(coordinates){
 	for (var i = 0; i < coordinates.length ; i++){
-		if(coordinates[i]==='d'){
+		if(coordinates[i]==='r'){
 			turnRight(rover2);
 
 		}
-		if(coordinates[i]==='a'){
+		if(coordinates[i]==='l'){
 			turnLeft(rover2);
 			
 		}
-		if(coordinates[i]==='w'){
+		if(coordinates[i]==='f'){
 			moveFordward(rover2);
 			
 		}
